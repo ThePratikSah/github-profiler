@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="app.js"></script>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fetch</title>
+</head>
+
+<body>
+  <!-- show spinner when the data is loading -->
+  <div class="loader"></div>
+  <!-- before data is loaded -->
+  <div class="card">
+    <input type="text" placeholder="Enter username to search" onkeypress="handle(event)">
+    <p class="not-found"></p>
+    <div class="card-header">
+      <img id="card-img">
+      <p id="card-title"></p>
+    </div>
+    <div class="card-body">
+      <p class="bio"></p>
+    </div>
+    <div class="card-footer">
+      <a id="github-url" target="_blank">Github</a>
+    </div>
+  </div>
+</body>
+
+</html>

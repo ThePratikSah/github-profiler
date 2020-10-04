@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader {
+  border: 8px solid #dddddd; /* Light grey */
+  border-top: 8px solid #003253; /* Blue */
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* css code for profile card */
+.card {
+  display: none;
+  width: 300px;
+  height: auto;
+  margin: 0 auto;
+  border: 2px solid red;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid rgb(241, 162, 43);
+  border-radius: 4px;
+  outline: none;
+}
+
+img {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+#card-title {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}

@@ -29,6 +29,25 @@ body {
   100% { transform: rotate(360deg); }
 }
 
+/* css code for custom alert */
+.alert {
+  display: flex;
+  visibility: hidden;
+  width: 150px;
+  position: fixed;
+  align-items: center;
+  border-radius: 5px;
+  padding: 10px;
+  top: 40px;
+  right: 40px;
+  background-color: rgb(241, 162, 43);
+  color: #fff;
+  font-size: 12px;
+  height: 40px;
+  transition: .7s;
+}
+
+
 /* css code for profile card */
 .card {
   display: none;

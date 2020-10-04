@@ -27,7 +27,11 @@ let handle = (e) => {
     let username = document.querySelector("input").value;
     getUser(username).then((data) => {
       if (data.message === "Not Found") {
-        alert(data.message);
+        document.querySelector(".alert").style.visibility = "visible";
+        setTimeout(function () {
+          document.querySelector(".alert").style.visibility = "hidden";
+        }, 3000);
+
       }
       else {
         let img = document.querySelector("#card-img");
